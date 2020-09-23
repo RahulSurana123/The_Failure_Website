@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	<link href="css/flip.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+	
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="image/image1.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+      <h3 class="welcome" style="top: 109.969px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 133.875px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
+</div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/image2.jpg" alt="Chicago">
+       <div class="carousel-caption">
+      <h3 class="welcome" style="top: 109.969px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 133.875px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
+</div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/image3.jpg" alt="New York">
+       <div class="carousel-caption">
+      <h3 class="welcome" style="top: 109.969px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 133.875px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+</div>
+
+<div class = "header topnav">
+   <img src="image/Logo-white.png" style = "width:100px; height:64px; margin-left : 20px; float:left;">
+<a class="active" href="Home.html" style="margin-left : 20px;">HOME</a>
+<a href="Blog.html">BLOGS</a>
+  <a href="Training.html">TRAINING</a>
+  <a href="Contact.html">CONTACT US</a>
+  <a href="About.html">ABOUT US</a>
+</div>
+
+<div class="h">
+<h2><center>HELLO USER..!</h2></center>
+<h3><center>WELCOME TO THE FAILURE COMPANY</center></h3>
+</div>
+<center>
+<span data-key="label" data-view="text" class="tick-label" data-value="Member">No Of Members</span>
+<div class="tick" data-did-init="handleTickInit" style = "font-size:40px;">
+	<div style="font-size: 20px;">
+
+        <span data-view="flip"></span>
+</div>
+</div>
+
+
+</center>
+
+<script>
+	var now = 100;
+	function handleTickInit(tick) {
+
+        // update the value every 5 seconds
+        var interval = Tick.helper.duration(1, 'seconds');
+
+        // value to add each interval
+        var valuePerInterval = 1;
+
+        // offset is a fixed date in the past
+        var dateOffset = 0;
+
+        // value to start with, the value of the counter at the offset date
+        var valueOffset = 0;
+
+        // uncomment lines below (and comment line above) if you want offset be set to the first time the user visited the page
+        // var offset = parseInt(localStorage.getItem('tick-value-counter-offset') || Date.now(), 10);
+        // localStorage.setItem('tick-value-counter-offset', offset);
+
+        // start updating the counter each second
+        
+        Tick.helper.interval(function () {
+
+            // current time in milliseconds
+            
+            now += 250;
+            // difference with offset time in milliseconds
+            var diff = now - dateOffset;
+
+            // total time since offset divide by interval gives us the amount of loops since offset
+            var loops = diff / interval;
+
+            // this will make sure we only count completed loops.
+            loops = Math.floor(loops);
+
+            // multiply that by the value per interval and you have your final value
+            tick.value = valueOffset + (loops * valuePerInterval);
+
+        }, 1000);
+    }
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="js/flip.min.js"></script>
+
+</body>
+</html>
