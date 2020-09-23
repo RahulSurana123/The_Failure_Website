@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact Us
+{%endblock title %}
+{% block body %}
+<div class="container-fluid my-3">
+
+<p style="text-align: center;"><img src="static\gif\2.gif" style="
+    width: 400px;
+"></p>
+</div>
+
+    <h2 class="text-center" style="
+    background: gray;
+    height: 1.5em;
+    border-width: 50px;
+    z-index: -14;
+    width: 6.5em;
+    position: relative;
+    left: 540px;
+    top: 50px;
+    border-radius: 150px;
+">Contact Us</h2>
+<div class="container">
+<form method="post" action="/contact">{% csrf_token %}
+  <div class="form-group my-4">
+    <label for="full name">Full Name :-</label>
+    <input type="name" class="form-control" id="full name" name="name" placeholder="Bill Gates">
+  </div>
+
+  <div class="form-group my-4">
+    <label for="email">Email address :-</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+  </div>
+  <div class="form-group my-4">
+    <label for="phone number">Phone Number :-</label>
+    <input type="number" class="form-control" id="phone number" name="phone" placeholder="1234567890">
+  </div>
+
+
+  <div class="form-group">
+    <label for="feedback">Give your feedback :-</label>
+    <textarea class="form-control" id="feedback" name="feedback" rows="3"></textarea>
+  </div>
+    <button type="submit" class="btn btn-secondary" >Submit</button>
+</form>
+
+    </div>
+{% endblock body %}
