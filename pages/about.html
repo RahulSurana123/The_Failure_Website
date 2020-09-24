@@ -1,42 +1,173 @@
-{% extends 'base.html' %}
-{% block title %}
-Contact Us
-{%endblock title %}
-{% block body %}
-<main role="main">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+  
+  <link href="../css/flip.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Hello, world!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+<body>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="../image/image1.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+      <h3 class="welcome" style="top: 0px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 0px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
+</div>
+    </div>
+    <div class="carousel-item">
+      <img src="../image/image2.jpg" alt="Chicago">
+       <div class="carousel-caption">
+      <h3 class="welcome" style="top: 109.969px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 133.875px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
+</div>
+    </div>
+    <div class="carousel-item">
+      <img src="../image/image3.jpg" alt="New York">
+       <div class="carousel-caption">
+      <h3 class="welcome" style="top: 109.969px; margin: 0px; padding: 0px; font-size: 14.3438px; line-height: 23.9062px;"> Welcome to</h3>
+<h3 class="failure_family" style="top: 133.875px; margin: 0px; padding: 0px; font-size: 19.125px; line-height: 23.9062px;"> Failure Family</h3>
     </div>
   </div>
+</div>
 
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+</div>
+
+<div class = "header topnav">
+   <img src="../image/Logo-white.png" style = "width:100px; height:64px; margin-left : 20px; float:left;">
+<a class="active" href="../index.htm" style="margin-left : 20px;">HOME</a>
+<a href="../pages/blog.html">BLOGS</a>
+  <a href="../pages/Training.html">TRAINING</a>
+  <a href="../pages/contact.html">CONTACT US</a>
+  <a href="../pages/about.html">ABOUT US</a>
+</div>
+
+<div class="jumbotron">
+      <div class="container">
+        <center>
+        <h3 class=" ">ABOUT US</h3>
+        <div class="orangeline"></div>
+        <div class="clearfix"></div>
+        </center>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
       </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+  </div>
+
+<div class="jumbotron">
+      <div class="container">
+        <center>
+        <h3 class=" ">OUR MISSION</h3>
+        <div class="orangeline"></div>
+        <div class="clearfix"></div>
+        </center>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
       </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-    </div>
+  </div>
 
-    <hr>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="logo"><img src = "image/Logo.png" style="width:220px; height:150px;"></h2>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+<li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-twitter"></span></a></li>
+<li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-facebook"></span></a></li>
+<li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-instagram"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">latest News</h2>
+<div class="block-21 mb-4 d-flex">
+<a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+<div class="text">
+<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+<div class="meta">
+<div><a href="#"> Oct. 16, 2019</a></div>
+<div><a href="#"> Admin</a></div>
+<div><a href="#"> 19</a></div>
+</div>
+</div>
+</div>
+<div class="block-21 mb-4 d-flex">
+<a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+<div class="text">
+<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+<div class="meta">
+<div><a href="#"> Oct. 16, 2019</a></div>
+<div><a href="#"> Admin</a></div>
+<div><a href="#"> 19</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-5">
+<h2 class="ftco-heading-2">Information</h2>
+<ul class="list-unstyled">
+<li><a href="index.htm" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Home</a></li>
+<li><a href="pages/about.html" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>About</a></li>
+<li><a href="pages/blog.html" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Blogs</a></li>
+<li><a href="pages/contact.html" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Have a Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+<li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+<p>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+</p>
+</div>
+</div>
+</div>
+</footer>
 
-  </div> <!-- /container -->
-
-</main>
-{%endblock body %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
